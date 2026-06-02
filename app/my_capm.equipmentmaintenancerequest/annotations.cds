@@ -1,0 +1,1 @@
+using my_capmSrv as service from '../../srv/service';

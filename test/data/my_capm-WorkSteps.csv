@@ -1,0 +1,6 @@
+ID;operationNumber;operationText;plannedWork;actualWork;isCompleted;completionDate;remarks;maintenanceOrder_ID;workCenter_ID;createdAt;createdBy;modifiedAt;modifiedBy
+1a4c505e-d7ee-493f-a0e4-05539a1388f4;OP001;Inspect Equipment;5.00;4.00;true;2021-06-05;All checks completed;1a4c505e-d7ee-493f-a0e4-05539a1388f4;1a4c505e-d7ee-493f-a0e4-05539a1388f4;2021-06-27T14:52:23Z;user1;2021-06-27T14:52:23Z;user1
+a6a9c1ac-d35a-437a-8930-1c71656c357f;OP002;Replace Parts;8.00;7.00;true;2021-06-10;Parts replaced successfully;a6a9c1ac-d35a-437a-8930-1c71656c357f;1a4c505e-d7ee-493f-a0e4-05539a1388f4;2021-06-27T14:52:23Z;user2;2021-06-27T14:52:23Z;user2
+775f910b-a89b-4d76-ab77-f1d01f358ca1;OP003;Perform Cleaning;3.00;2.50;false;NULL;Needs additional cleaning;775f910b-a89b-4d76-ab77-f1d01f358ca1;a6a9c1ac-d35a-437a-8930-1c71656c357f;2021-06-27T14:52:23Z;user3;2021-06-27T14:52:23Z;user3
+82a162a8-b84e-467a-957c-6f0e6cfb54fe;OP004;Final Inspection;2.00;1.50;true;2021-06-15;Final checks completed;82a162a8-b84e-467a-957c-6f0e6cfb54fe;a6a9c1ac-d35a-437a-8930-1c71656c357f;2021-06-27T14:52:23Z;user4;2021-06-27T14:52:23Z;user4
+9a3bfd45-f5da-43cd-8ac5-11490126c77d;OP005;Documentation;1.00;0.50;true;2021-06-20;All documents submitted;9a3bfd45-f5da-43cd-8ac5-11490126c77d;1a4c505e-d7ee-493f-a0e4-05539a1388f4;2021-06-27T14:52:23Z;user5;2021-06-27T14:52:23Z;user5

@@ -1,0 +1,6 @@
+ID;functionalLocation;functionalLocationName;superiorFunctLocation;plant;companyCode;structureIndicator;workCenter_ID;createdAt;createdBy;modifiedAt;modifiedBy
+1a4c505e-d7ee-493f-a0e4-05539a1388f4;FL001;Main Building;NULL;PL01;CC01;A;1a4c505e-d7ee-493f-a0e4-05539a1388f4;2021-06-27T14:52:23Z;user1;2021-06-27T14:52:23Z;user1
+a6a9c1ac-d35a-437a-8930-1c71656c357f;FL002;Warehouse;FL001;PL01;CC01;B;1a4c505e-d7ee-493f-a0e4-05539a1388f4;2021-06-27T14:52:23Z;user2;2021-06-27T14:52:23Z;user2
+775f910b-a89b-4d76-ab77-f1d01f358ca1;FL003;Production Area;FL001;PL01;CC01;C;a6a9c1ac-d35a-437a-8930-1c71656c357f;2021-06-27T14:52:23Z;user3;2021-06-27T14:52:23Z;user3
+82a162a8-b84e-467a-957c-6f0e6cfb54fe;FL004;Maintenance Room;FL001;PL01;CC02;A;a6a9c1ac-d35a-437a-8930-1c71656c357f;2021-06-27T14:52:23Z;user4;2021-06-27T14:52:23Z;user4
+9a3bfd45-f5da-43cd-8ac5-11490126c77d;FL005;Office;FL001;PL01;CC02;B;775f910b-a89b-4d76-ab77-f1d01f358ca1;2021-06-27T14:52:23Z;user5;2021-06-27T14:52:23Z;user5

@@ -1,0 +1,6 @@
+ID;lineNumber;costCategory;itemDescription;quantity;unitRate;lineAmount;currency;costCenter;notification_ID;createdAt;createdBy;modifiedAt;modifiedBy
+1a4c505e-d7ee-493f-a0e4-05539a1388f4;1;CM;Replacement Parts;10;15.00;150.00;USD;CC001;1a4c505e-d7ee-493f-a0e4-05539a1388f4;2021-06-27T14:52:23Z;user1;2021-06-27T14:52:23Z;user1
+a6a9c1ac-d35a-437a-8930-1c71656c357f;2;CM;Labor Costs;5;100.00;500.00;USD;CC002;a6a9c1ac-d35a-437a-8930-1c71656c357f;2021-06-27T14:52:23Z;user2;2021-06-27T14:52:23Z;user2
+775f910b-a89b-4d76-ab77-f1d01f358ca1;3;CM;Maintenance Supplies;20;5.00;100.00;USD;CC001;775f910b-a89b-4d76-ab77-f1d01f358ca1;2021-06-27T14:52:23Z;user3;2021-06-27T14:52:23Z;user3
+82a162a8-b84e-467a-957c-6f0e6cfb54fe;4;CM;Tools;15;20.00;300.00;USD;CC002;82a162a8-b84e-467a-957c-6f0e6cfb54fe;2021-06-27T14:52:23Z;user4;2021-06-27T14:52:23Z;user4
+9a3bfd45-f5da-43cd-8ac5-11490126c77d;5;CM;Safety Gear;12;25.00;300.00;USD;CC001;9a3bfd45-f5da-43cd-8ac5-11490126c77d;2021-06-27T14:52:23Z;user5;2021-06-27T14:52:23Z;user5

@@ -1,0 +1,6 @@
+ID;workCenterCode;workCenterDesc;plant;workCenterCategory;costCenter;activityType;validFrom;validTo;isActive;createdAt;createdBy;modifiedAt;modifiedBy
+1a4c505e-d7ee-493f-a0e4-05539a1388f4;WC001;Assembly Line;PL01;A;CC001;ACT;2021-06-01;2021-12-31;true;2021-06-27T14:52:23Z;user1;2021-06-27T14:52:23Z;user1
+a6a9c1ac-d35a-437a-8930-1c71656c357f;WC002;Quality Control;PL01;B;CC002;ACT;2021-06-01;2021-12-31;true;2021-06-27T14:52:23Z;user2;2021-06-27T14:52:23Z;user2
+775f910b-a89b-4d76-ab77-f1d01f358ca1;WC003;Packaging;PL01;A;CC001;ACT;2021-06-01;2021-12-31;true;2021-06-27T14:52:23Z;user3;2021-06-27T14:52:23Z;user3
+82a162a8-b84e-467a-957c-6f0e6cfb54fe;WC004;Maintenance;PL01;C;CC002;ACT;2021-06-01;2021-12-31;true;2021-06-27T14:52:23Z;user4;2021-06-27T14:52:23Z;user4
+9a3bfd45-f5da-43cd-8ac5-11490126c77d;WC005;Logistics;PL01;B;CC001;ACT;2021-06-01;2021-12-31;true;2021-06-27T14:52:23Z;user5;2021-06-27T14:52:23Z;user5
