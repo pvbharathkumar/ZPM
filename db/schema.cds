@@ -47,7 +47,7 @@ entity Equipments : cuid, managed {
 // Transactional Objects
 @assert.unique: { notificationNumber: [notificationNumber] }
 entity MaintenanceNotifications : cuid, managed {
-  notificationNumber: String(12) @mandatory;
+  notificationNumber: String(12);
   notificationType: String(2);
   notificationText: String(40);
   notifPriority: String(1);

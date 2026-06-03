@@ -8,14 +8,17 @@ service my_capmSrv {
   entity WorkCenters as projection on my.WorkCenters;
   
   entity FunctionalLocations as projection on my.FunctionalLocations;
+
   @odata.draft.enabled
   entity Equipments as projection on my.Equipments;
   
-  entity MaintenanceNotifications as projection on my.MaintenanceNotifications;
   @odata.draft.enabled
+  entity MaintenanceNotifications as projection on my.MaintenanceNotifications;
+  
   entity CostEstimationLines as projection on my.CostEstimationLines;
   
   entity MaintenanceOrders as projection on my.MaintenanceOrders;  
+  
   @odata.draft.enabled
   entity WorkSteps as projection on my.WorkSteps;
 }

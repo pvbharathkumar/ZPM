@@ -6,6 +6,25 @@ const LCAPApplicationService = require('@sap/low-code-event-handler');
 const before_Maintenancenotifications_Create_Update = require('./code/before-maintenancenotifications-create-update');
 const after_Maintenanceorders_Read = require('./code/after-maintenanceorders-read');
 const on_Maintenanceorders_Updatecosts = require('./code/on-maintenanceorders-updatecosts');
+const cds = require('@sap/cds');
+
+// ── Helper: get next sequence number ──────────────────────────────────
+async function getNextSequenceNumber(entity, field, prefix, length) {
+    const db = await cds.connect.to('db');
+    const result = await db.run(
+        SELECT.from(entity)                          // ← entity is a string parameter
+            .columns(`MAX(${field}) as maxNumber`)
+            .where(`${field} LIKE '${prefix}%'`)
+    );
+    const maxNumber = result[0]?.maxNumber || null;
+    if (!maxNumber) {
+        return prefix + '1'.padStart(length - prefix.length, '0');
+    }
+    const nextNumber = (parseInt(maxNumber.replace(prefix, '')) + 1)
+        .toString()
+        .padStart(length - prefix.length, '0');
+    return `${prefix}${nextNumber}`;
+}
 
 class my_capmSrv extends LCAPApplicationService {
     async init() {
@@ -21,12 +40,18 @@ class my_capmSrv extends LCAPApplicationService {
         this.on('updateCosts', 'MaintenanceOrders', async (request) => {
             return on_Maintenanceorders_Updatecosts(request);
         });
-
+        // ── MaintenanceNotifications: NT001, NT002 ... ──────────────────
+        this.before('CREATE', 'MaintenanceNotifications', async (request) => {
+            console.log('=== CREATE MaintenanceNotifications fired ===');
+            if (!request.data.notificationNumber) {
+                request.data.notificationNumber = await getNextSequenceNumber(
+                    'my_capm.MaintenanceNotifications', 'notificationNumber', 'NT', 5
+                );
+                console.log('Generated:', request.data.notificationNumber);
+            }
+        });
         return super.init();
     }
 }
+module.exports = my_capmSrv;
 
-
-module.exports = {
-    my_capmSrv
-};

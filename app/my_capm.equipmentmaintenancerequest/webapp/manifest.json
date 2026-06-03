@@ -110,6 +110,11 @@
           "pattern": "MaintenanceNotifications({key})/costLines({key2}):?query:",
           "name": "CostEstimationLinesObjectPage",
           "target": "CostEstimationLinesObjectPage"
+        },
+        {
+          "pattern": "Equipments({key}):?query:",
+          "name": "EquipmentsObjectPage",
+          "target": "EquipmentsObjectPage"
         }
       ],
       "targets": {
@@ -119,8 +124,10 @@
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
+              "entitySet": "MaintenanceNotifications",
               "contextPath": "/MaintenanceNotifications",
               "variantManagement": "Page",
+              "initialLoad": "Enabled",
               "navigation": {
                 "MaintenanceNotifications": {
                   "detail": {
@@ -151,6 +158,11 @@
                   "detail": {
                     "route": "CostEstimationLinesObjectPage"
                   }
+                },
+                "equipment": {
+                  "detail": {
+                    "route": "EquipmentsObjectPage"
+                  }
                 }
               }
             }
@@ -164,6 +176,18 @@
             "settings": {
               "editableHeaderContent": false,
               "contextPath": "/MaintenanceNotifications/costLines"
+            }
+          }
+        },
+        "EquipmentsObjectPage": {
+          "type": "Component",
+          "id": "EquipmentsObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "entitySet": "Equipments",
+              "contextPath": "/Equipments",
+              "editableHeaderContent": false
             }
           }
         }
