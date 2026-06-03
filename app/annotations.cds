@@ -23,9 +23,9 @@ annotate my_capmSrv.MaintenanceNotifications with @UI.LineItem : [
   { $Type: 'UI.DataField', Value: notificationText, Label: 'Notification Text' },
   { $Type: 'UI.DataField', Value: notifPriority, Label: 'Priority' },
   { $Type: 'UI.DataField', Value: notificationStatus, Label: 'Status' },
-  { $Type: 'UI.DataFieldForIntentBasedNavigation', Label: 'Equipment', Value: equipment.equipmentNumber },
-  { $Type: 'UI.DataFieldForIntentBasedNavigation', Label: 'Functional Location', Value: functionalLocation.functionalLocation },
-  { $Type: 'UI.DataFieldForIntentBasedNavigation', Label: 'Work Center', Value: workCenter.workCenterCode }
+  { $Type: 'UI.DataFieldWithNavigationPath', Label: 'Equipment', Value: equipment.equipmentNumber, Target: 'equipment' },
+  { $Type: 'UI.DataFieldWithNavigationPath', Label: 'Functional Location', Value: functionalLocation.functionalLocation, Target: 'functionalLocation' },
+  { $Type: 'UI.DataFieldWithNavigationPath', Label: 'Work Center', Value: workCenter.workCenterCode, Target: 'workCenter' }
 ];
 
 annotate my_capmSrv.MaintenanceNotifications with @UI.FieldGroup #General : {
